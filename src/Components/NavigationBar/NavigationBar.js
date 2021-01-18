@@ -7,9 +7,9 @@ const NavigationBar = () => {
     <Navbar bg="primary" variant="dark">
       <Navbar.Brand href="#home">GoMyCode Team</Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Nav.Link href="#home">Members</Nav.Link>
+        <Nav.Link href="#features">Skills</Nav.Link>
+        <Nav.Link href="#pricing">Stories</Nav.Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />

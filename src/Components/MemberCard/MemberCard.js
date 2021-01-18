@@ -15,7 +15,7 @@ const MemberCard = ({
         <Card.Title>{secondName}</Card.Title>
         <Card.Text>{desc}</Card.Text>
         <Button variant="primary" onClick={() => handelName(name)}>
-          Go somewhere
+          Say Hi
         </Button>
       </Card.Body>
     </Card>
@@ -23,8 +23,13 @@ const MemberCard = ({
 };
 
 MemberCard.propTypes = {
-  name: PropTypes.number.isRequired,
-  secondName: PropTypes.number.isRequired,
+  member: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    secondName: PropTypes.string.isRequired,
+    photo: PropTypes.string.isRequired,
+  }),
+
+  handelName: PropTypes.func.isRequired,
 };
 
 MemberCard.defaultProps = {

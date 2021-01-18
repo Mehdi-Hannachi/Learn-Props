@@ -1,18 +1,26 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import './footer.css'
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Card } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <Card className="text-center">
-      <Card.Header>Featured</Card.Header>
       <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
         <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
+          GoMyCode Hackerspace, <br />
+          Immeuble NEO, 2ème étage, Rue du lac lochness, Les Berges du Lac1{" "}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+
+        <div className='icons'>
+          <FaFacebook className="fb" />
+          <FaYoutube />
+          <FaInstagram />
+        </div>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="text-muted">
+        Powered by Hannachi Mehdi
+      </Card.Footer>
     </Card>
   );
 };
