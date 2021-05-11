@@ -1,7 +1,7 @@
 import React from "react";
 import MemberCard from "../MemberCard/MemberCard";
 import "./dashboard.css";
-const Dashboard = ({ team }) => {
+const Dashboard = ({ team, children }) => {
   const handelName = (myname) => {
     alert(`Hello I am ${myname}`);
   };
@@ -12,6 +12,11 @@ const Dashboard = ({ team }) => {
         {team.map((member, i) => (
           <MemberCard member={member} key={i} handelName={handelName} />
         ))}
+      </div>
+
+      <div>
+        <span>Children</span>
+        {children}
       </div>
     </>
   );

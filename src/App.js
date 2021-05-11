@@ -8,7 +8,19 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      <Dashboard team={team} />
+      <Dashboard team={team} >
+        {/* children props */}
+
+        {"Title Image"}
+        <img
+          src="https://i1.sndcdn.com/avatars-000495007683-zg65ko-t500x500.jpg"
+          alt=""
+          width="20px"
+          height="20px"
+        />
+
+        
+      </Dashboard>
       <Footer />
     </div>
   );
